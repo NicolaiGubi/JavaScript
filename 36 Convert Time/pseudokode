@@ -1,0 +1,11 @@
+input a
+
+a = a/60
+
+b = modulus af a
+
+print heltal a som timer og b som minutter
+
+
+
+

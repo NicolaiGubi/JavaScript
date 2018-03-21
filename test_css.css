@@ -1,0 +1,26 @@
+body {
+    font-family: Verdana, Helvetica, Arial;
+    background-color: darkslategray;
+    text-align: center;
+}
+span {
+    background-color: slategray;
+    color: aliceblue;
+    font-size: 24px;
+    height: 1.5em;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid aliceblue;
+    border-radius: 5px;
+}
+
+span:hover {
+    background-color: aliceblue;
+    color: slategray;
+    border: 2px solid slategray;
+}
+input {
+
+}

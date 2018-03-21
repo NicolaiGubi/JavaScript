@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div{
+            margin: 10px;
+            width: 260px;
+            padding-bottom: 20px;
+        }
+        .title{
+            float: left;
+            width: 100px;
+            text-align: right;
+            padding-right: 10px;
+        }
+        button{
+            text-align: right;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div id="logindiv">
+    <label class="title">User name:</label> <input type="text" id="username" title="username"><br>
+    <label class="title">Password:</label>  <input type="text" id="password" title="password"><br>
+    <button id="login" onclick="login()">Log in</button>
+</div>
+<div id="loggedindiv" hidden>
+    Du er nu logget ind <span id="name"></span>.<br>
+    <button id="logout" onclick="logout()">Log out</button>
+</div>
+<script src="login_v2.js"></script>
+</body>
+</html>

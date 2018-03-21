@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinema</title>
+</head>
+<body>
+<p>Cinema size: <input id="sizeX" value="5" name="number" type="number" size="10" min="1" max="40"> x <input id="sizeY" value="5" name="number" type="number" size="10" min="1" max="20"> <button id="buttonDraw" onclick="createCinema()">Create Cinema</button> <button id="buttonReset" onclick="reset()">Reset Cinema</button> </p>
+<p></p>
+<p>Seat Row: <input id="seatRow" value="1" name="number" type="number" size="1" min="1" max="40"></p>
+<p>Seat Number: <input id="seatNumber" value="1" name="number" type="number" size="1" min="1" max="20"></p>
+<button id="buttonBook" onclick="bookSeat()">Book Seat</button><div id="feedback01" class="feedback"> The seat is taken - try again!</div>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><canvas id="canvas" width="900" height="600" ></canvas></p>
+
+<script src="jquery-1.11.0.js"></script>
+<script src="biograf.js"></script>
+</body>
+</html>

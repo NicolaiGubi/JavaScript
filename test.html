@@ -1,0 +1,95 @@
+<!-- Get canvas coordinate-->
+<!doctype html>
+
+<html>
+<head>
+    <title>Get the coordinates on canvas</title>
+    <meta charset="utf-8" />
+
+    <style type="text/css">
+
+        #canvas{background-color: #000;}
+
+    </style>
+
+    <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", init, false);
+
+        function init()
+        {
+            var canvas = document.getElementById("canvas");
+            canvas.addEventListener("mousedown", getPosition, false);
+        }
+
+        function getPosition(event)
+        {
+            var x = new Number();
+            var y = new Number();
+            var canvas = document.getElementById("canvas");
+
+            if (event.x != undefined && event.y != undefined)
+            {
+                x = event.x;
+                y = event.y;
+            }
+            else // Firefox method to get the position
+            {
+                x = event.clientX + document.body.scrollLeft +
+                    document.documentElement.scrollLeft;
+                y = event.clientY + document.body.scrollTop +
+                    document.documentElement.scrollTop;
+            }
+
+            x -= canvas.offsetLeft;
+            y -= canvas.offsetTop;
+
+            alert("x: " + x + "  y: " + y);
+        }
+
+    </script>
+
+</head>
+
+<body>
+<canvas id="canvas" width="640" height="360"></canvas>
+</body>
+</html>
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pyramid</title>
+</head>
+<body>
+<input type="text" name="" id="number"> <button onclick="pyramid()">Click to see your number pyramid</button>
+<br>
+<div id="result"></div>
+
+<script>
+    function pyramid(){
+        var number = document.getElementById('number').value;
+        var div_result = document.getElementById('result');
+        var result = "";
+        for(var i = 1; i <= number; i++){
+            var star = "";
+            for(var j = 0; j < number - i; j++){
+                star = star + '&#160;&#160;';
+            }
+            for (var k = 0; k < 2 * i -1; k++){
+                star = star + "*"
+            }
+            result  += '<br>' +  star;
+        }
+        div_result.innerHTML = result;
+        console.log(number);
+    }
+
+</script>
+</body>
+</html>
+-->

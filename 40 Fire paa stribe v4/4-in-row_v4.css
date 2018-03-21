@@ -1,0 +1,107 @@
+body{
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+    color: antiquewhite;
+    background-color: darkslategray;
+}
+table{
+    visibility: visible;
+}
+table.hidden{
+    visibility: hidden;
+}
+div.playBox {
+    background-color: #006363;
+    color: antiquewhite;
+    border-radius: 10px;
+    width: 500px;
+    border: 3px solid antiquewhite;
+    padding: 20px;
+    margin: 5px;
+    visibility: visible;
+}
+div.playBox.hidden{
+    visibility: hidden;
+}
+span.color {
+     padding: 25px;
+     margin: 5px;
+     visibility: visible;
+     cursor: pointer;
+}
+span.color.hidden{
+    visibility: hidden;
+}
+span.red {
+    background-color: firebrick;
+    color: firebrick;
+}
+span.blue {
+    background-color: royalblue;
+    color: royalblue;
+}
+span.green {
+    background-color: darkolivegreen;
+    color: darkolivegreen;
+}
+span.magenta {
+    background-color: darkmagenta;
+    color: darkmagenta;
+}
+span.black {
+    background-color: #444444;
+    color: #444444;
+}
+span.hidden {
+    visibility: hidden;
+}
+button.columnButton{
+    background-color: antiquewhite;
+    color: #006363;
+    border-radius: 5px;
+    width: 65px;
+    border: 2px solid #006363;
+    padding: 4px;
+    margin: 5px;
+    visibility: visible;
+}
+button.columnButton:hover{
+    background-color: #006363;
+    color: antiquewhite;
+    border: 2px solid antiquewhite;
+}
+button.hidden{
+    visibility: hidden;
+}
+#reset{
+    width: 180px;
+    height: 60px;
+    background-color: antiquewhite;
+    color: #006363;
+    font-size: 16pt;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 3px solid #006363;
+    cursor: pointer;
+}
+#reset:hover{
+    background-color: firebrick;
+    color: antiquewhite;
+    border: 2px solid darkred;
+}
+#startGame{
+    width: 180px;
+    height: 60px;
+    background-color: antiquewhite;
+    color: #006363;
+    font-size: 20pt;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 3px solid #006363;
+    cursor: pointer;
+}
+#startGame:hover{
+    background-color: #006363;
+    color: antiquewhite;
+    border: 3px solid antiquewhite;
+}
